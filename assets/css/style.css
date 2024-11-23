@@ -1,0 +1,633 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inknut Antiqua';
+}
+
+#main {
+  overflow: hidden;
+}
+.clear-fix {
+  clear: both;
+}
+header {
+  height: 70px;
+  width: 100%;
+  background-color: rgb(8, 8, 8);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.zero {
+  margin-left: -959px;
+  height: 70px;
+  width: 150px;
+  position: relative;
+  display: inline-block;
+}
+.zero-img {
+  width: 100%;
+  height: 100%;
+}
+.text {
+  position: absolute;
+  text-align: center;
+  left: 20%;
+  bottom: 11px;
+}
+.text-heading {
+  font-weight: 700;
+  font-size: 13px;
+}
+.text-zero {
+  color: #ffff;
+  font-size: 7px;
+}
+
+#dav {
+  display: block;
+  height: 70px;
+  width: 806px;
+  float: left;
+  margin-left: 153px;
+}
+#dav,
+.sadav {
+  list-style-type: none;
+}
+
+#dav li:hover {
+  background-color: rgb(33, 34, 34);
+}
+
+#dav > li {
+  display: inline-block;
+}
+
+#dav li {
+  position: relative;
+}
+
+#dav li:hover .sadav {
+  display: block;
+}
+
+#dav li a {
+  color: #ef410a;
+}
+
+#dav li a {
+  text-decoration: none;
+  min-width: 95px;
+  line-height: 70px;
+  padding: 0px 25px;
+  display: inline-block;
+}
+
+#dav .sadav li:hover {
+  color: yellowgreen;
+  background-color: rgb(33, 34, 34);
+}
+
+#dav .sadav {
+  display: none;
+  position: absolute;
+  background-color: #ffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sadav li {
+  background-color: #D9D9D9;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  font-size: 15px;
+  line-height: 46px;
+}
+
+
+.search-form {
+  width: 82px;
+  height: 18px;
+  margin-right: 170px;
+  margin-top: 52px;
+  display: inline-block;
+  float: inline-end;
+}
+
+.input-text {
+  background-color: #D9D9D9;
+  padding: 3px;
+  margin-top: -27px;
+  display: block;
+}
+.search-button {
+  margin-top: -18px;
+  float: right;
+  display: block;
+}
+.icon-user {
+  background-color: #D9D9D9;
+  padding: 9px;
+  float: right;
+  display: inline-block;
+  border-radius: 90px;
+}
+.icon-use {
+  font-size: 40px;
+}
+
+/* header xong */
+
+#slider {
+
+  margin-top: 70px;
+  height: 344px;
+  width: 100%;
+  background-color: #565252;
+}
+.slider-home {
+  height: 344px;
+  width: 60%;
+}
+.slider-img {
+  width: 100%;
+  height: 100%;
+}
+.slider-home:hover {
+  opacity: 0.6;
+}
+.text-one {
+  width: 40%;
+  float: right;
+  display: inline-block;
+}
+.text-in {
+  color: #ffff;
+  padding-left: 26px;
+  font-size: 15px;
+  display: block;
+  margin-top: 2px;
+  padding-right: 26px;
+}
+
+.text-on {
+  font-size: 20px;
+  color: #ef410a;
+}
+.text-off {
+  font-size: 13px;
+}
+.text-off:hover {
+  color: #ef410a;
+  cursor: pointer;
+}
+/* xong slider */
+#content {
+  background-color: #000000de;
+}
+#content .content-horror, 
+#content .content-nav, 
+#content .content-home {
+  width: 100%;
+  height: 450px;
+  padding: 26px;
+  color: #D11111;
+
+}
+.content-nav {
+  background-color: #00000093;
+}
+.content-horror {
+  background: url('/assets/image/imgzero.jpg') center / cover no-repeat;
+}
+.section-heading {
+  display: inline-block;
+  font-size: 20px;
+}
+.subheading {
+  display: inline;
+  margin-left: 49px;
+  padding: 9px 29px;
+  font-size: 12px;
+  background-color: #000000;
+  border-radius: 7px;
+} 
+#content .subheading a {
+  color: #ffff;
+}
+
+.subheading:hover  {
+  background-color: red;
+  color: #000000;
+  cursor: pointer;
+}
+.endheading {
+  float: inline-end;
+  margin-right: 55px;
+  padding: 9px 30px;
+  background-color: black;
+  font-size: 12px;
+  color: #ffff;
+  margin-top: 8px;
+  border-radius: 7px;
+}
+.endheading:hover {
+  background-color: red;
+  cursor: pointer;
+}
+#content .love-home, 
+#content .sword-home, 
+#content .anime-home, 
+#content .adventure-home, 
+#content .horror-film,
+#content .movie-home, 
+#content .new-home, 
+#content .bxh-home, 
+#content .film-home {
+  margin-top: 40px;
+}
+#content .film-list {
+  float: left;
+  width: 240px;
+  height: 280px;
+  margin-left: 16px;
+  background-color: #0E0E0E;
+}
+#content .film-image {
+  width: 240px;
+  height: 148px;
+}
+#content .film-image:hover {
+  opacity: 0.6;
+  transform: scale(1.05);
+}
+#content .film-name {
+  font-size: 12px;
+  padding: 12px 5px;
+  text-align: center;
+}
+#content .film-play {
+  font-size: 12px;
+  color: red;
+  padding: 8px 44px;
+  background-color: gray;
+  margin-left: 47px;
+  border-radius: 44px;
+  cursor: pointer;
+}
+#content .film-play:hover {
+  color: #ffff;
+  background-color: #D11111;
+}
+
+/* xong top film đầu */
+
+.bxh-list {
+  float: left;
+  width: 20%;
+  padding: 0 30px;
+}
+.bxh-image {
+  width: 100%;
+  height: 236px;
+  cursor: pointer;
+}
+.bxh-image:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+.bxh-box1 {
+  background-color: red;
+}
+.bxh-box2 {
+  background-color: orange;
+}
+.bxh-box3 {
+  background-color: yellow;
+}
+.bxh-box4 {
+  background-color: green;
+}
+.bxh-box5 {
+  background-color: aqua;
+}
+.bxh-item {
+  color: black;
+  text-align: center;
+  font-size: 17px;
+  margin-top: -23px;
+  cursor: pointer;
+
+}
+
+/* xong bxh film */
+
+.new-list {
+  float: left;
+  padding: 4px 29px;
+  width: 33.33333%;
+  cursor: pointer;
+}
+.new-image {
+  width: 100%;
+}
+.new-image:hover {
+  opacity: 0.7;
+  transform: scale(1.25);
+}
+.new-item {
+  font-size: 19px;
+  margin-top: -59px;
+  margin-left: 15px;
+  cursor: pointer;
+  color: #ffff;
+}
+.new-item:hover {
+  color: red;
+}
+
+/* xong film lẻ */
+
+.movie-list {
+  padding: 8px 11px;
+  float: left;
+  width: 25%;
+  cursor: pointer;
+}
+.movie-image {
+  width: 100%;
+  height: 286px;
+  border-radius: 25px;
+  position: relative;
+}
+.movie-image:hover {
+  opacity: 0.4;
+  transform: scale(1.05);
+  box-shadow: 5px 10px 15px rgb(8, 8, 8);
+}
+.icon-play {
+  position: absolute;
+  opacity: 0;
+  font-size: 70px;
+  margin: 110px -180px;
+}
+.icon-play:hover {
+  opacity: 1;
+}
+.movie-text {
+  width: 203px;
+  margin-top: -299px;
+  padding: 4px 14px;
+  border-radius: 24px;
+  background-color: #5CF2C5;
+}
+.movie-item {
+  margin-top: 188px;
+  padding: 4px 11px;
+  color: #5CF2C5;
+}
+.movie-item:hover {
+  color: red;
+}
+
+/* xong film bộ */
+
+.horror-list {
+  float: left;
+  width: 20%;
+  cursor: pointer;
+  padding: 1px 28px;
+}
+.horror-image {
+  width: 100%;
+  height: 257px;
+  margin-top: -21px;
+}
+.horror-image:hover {
+  opacity: 0.6;
+}
+
+.horror-item {
+  text-align: center;
+  margin-top: -15px;
+}
+.horror-stop {
+  text-align: center;
+  margin-top: 213px; 
+}
+.horror-title {
+  height: 43px;
+  width: 171px;
+  margin-top: -271px;
+  padding: 6px 16px;
+  background-color: aqua;
+  border-radius: 50px;
+}
+/* xong film kinh dị */
+ .adventure-list {
+  float: left;
+  width: 20%;
+  padding: 3px 17px;
+ }
+.adventure-image {
+  width: 100%;
+  height: 294px;
+}
+.adventure-image:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+.adventure-play {
+  margin-left: 45px;
+  padding: 8px 30px;
+  border-radius: 50px;
+}
+.adventure-play:hover {
+  background-color: #D11111;
+  color: #000000;
+}
+/* xong film hành động */
+.anime-list {
+  float: left;
+  padding: 1px 21px;
+  width: 20%;
+}
+.anime-image {
+  width: 100%;
+  height: 263px;
+  cursor: pointer;
+}
+.anime-image:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.anime-title {
+  margin-top: -278px;
+  text-align: center;
+  margin-left: -53px;
+}
+.anime-item {
+  color: #5CF2C5;
+  cursor: pointer;
+  text-align: center;
+}
+.anime-item:hover {
+  color: #D11111;
+}
+.anime-itemall {
+  color: #5CF2C5;
+  text-align: center;
+  margin-top: 237px;
+  cursor: pointer;
+}
+.anime-itemall:hover {
+  color: #D11111;
+}
+.sword-list {
+  float: left;
+  padding: 1px 37px;
+  width: 20%;
+}
+/* xong film anime */
+.sword-image {
+  width: 100%;
+  height: 257px;
+}
+.sword-image:hover {
+  opacity: 0.7;
+  box-shadow: 5px 10px 10px rgba(0.5, 0.2, 0.4, 1);
+  transform: scale(1.05);
+}
+.sword-item {
+  text-align: center;
+}
+/* xong film kiếm hiệp */
+.love-list {
+  padding: 8px 11px;
+  float: left;
+  width: 33.33333%;
+  cursor: pointer;
+}
+.love-img {
+  width: 100%;
+  height: 286px;
+  border-radius: 25px;
+  position: relative;
+}
+.love-img:hover {
+  /* opacity: 0.4; */
+  /* transform: scale(1.05); */
+  box-shadow: 5px 10px 15px rgb(8, 8, 8);
+  object-fit: cover;
+  transition: all .6s ease-in-out;
+
+}
+.love-play {
+  position: absolute;
+  opacity: 0;
+  font-size: 70px;
+  margin: 110px -245px;
+}
+.love-play:hover {
+  opacity: 1;
+}
+.love-text {
+  width: 203px;
+  margin-top: -299px;
+  padding: 4px 14px;
+  border-radius: 24px;
+  background-color: #5CF2C5;
+}
+.love-item {
+  margin-top: 188px;
+  padding: 4px 11px;
+  color: #5CF2C5;
+}
+/* xong film tình cảm  */
+
+.footer {
+  border: 1px solid;
+  display: flex;
+  background-color: #000000;
+}
+
+.footer-title {
+  text-align: center;
+}
+
+.gift-footer {
+  color: #ffff;
+  font-size: 20px;
+  margin-top: 122px;
+}
+
+.item-footer {
+  color: #ffff;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.list-social {
+  padding: 70px 0 0 90px;
+  flex: 1;
+}
+
+.list-social h3 {
+  color: #0075ff;
+}
+.icon-social {
+  font-size: 30px;
+}
+
+.film-footer {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  margin-top: 70px;
+}
+
+.film-list h3 {
+  color: #00b2ff;
+}
+
+ul.film-list {
+  margin-left: -90px;
+}
+
+.film-list li a {
+  line-height: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.film-list li a:hover {
+  color: #D11111;
+}
+
+.insta {
+  background: linear-gradient(
+    139.13deg,
+    #db00ff -2.1%,
+    #ff00a8 45.08%,
+    #ffe600 89.4%
+  );
+}
+
+.fb {
+  color: #0075ff;
+}
+
+.tw {
+  color: #00b2ff;
+}
+.gml {
+  color: #ff0303;
+  /* transform: ; */
+}
+
